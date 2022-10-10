@@ -1,0 +1,60 @@
+<!DOCTYPE html> <!--Allows the last HTML version-->
+<html>
+    <head>
+        <meta charset="utf-8" /> <!--Allows spanish characteres-->
+        <title>MOKEPON!</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body background="./Imgs/wlpp.jpg">
+        <section id="choose-pet"> <!--Creates a section-->
+            <h1 class="title">💧🍃🔥MOKEPON🔥🍃💧</h1> 
+
+            <h2 class="subtitle">Choose your pet</h2>
+
+            <div class="cards" id="cards-container" > <!--Creates a division that allows encapsulate the cards -->
+            
+            </div>
+            <button id="button-choose">Choose</button> <!--Creates a button for the user-->
+        </section>
+
+        <section id="choose-attack">
+            <h1 class="title">💧🍃🔥MOKEPON🔥🍃💧</h1> 
+
+            <h2 class="subtitle">Choose your attack</h2>
+
+            <div id="attacks-container" class="attack-buttons">
+            </div>
+
+            <div id="messages">
+                <p id="result">LET'S FIGHT!</p>
+
+                <section id="reset">
+                    <button id="button-reset">Reset
+                    </button>
+                </section>
+            </div>
+
+            <div class="battle">
+                <div class="player-register">
+                    <p id="player-victories">0</p>
+                    <img id="player-image-pet" src="" alt="">
+                    <p id="player-pet"></p>
+                    <div id="player-attacks"></div>
+                </div>
+
+                <div class="combat-register">
+                    <p>vs</p>
+                    <div id="number-attack"></div>
+                </div>
+
+                <div class="enemy-register">
+                    <p id="enemy-victories">0</p>
+                    <img id="enemy-image-pet" src="" alt="">
+                    <p id="enemy-pet"></p>
+                    <div id="enemy-attacks"></div>
+                </div>
+            </div>            
+        </section>
+        <script src="./scriptjs/mokepon.js"></script><!--Open JavaScript script. './' means same folder. 'scriptjs' means the folder we want to open. 'mokepon.js' means the js file we want to open.-->
+    </body>
+</html>

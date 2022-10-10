@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); /*Imports the font*/
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
+body { /*Type selector */
+    font-family: 'Press Start 2P', cursive; /*Uses the font*/ 
+    background-size: cover;
+    background-repeat: none;
+}
+
+.mokepon-card { /*Class selector*/
+    width: 400px;
+    height: 250px;
+    padding: 10px; /*Inner padding, like inner margin*/
+    border: 10px solid #002B5B;
+    border-radius: 30px;
+    box-sizing: border-box;/*The box will always has the same size*/
+
+    background: radial-gradient(#21E1E1, transparent);
+    text-shadow: 0 0 15px #002b5b;
+    font-size: 20px;
+
+    display: flex; /*They're located next to each other*/
+        align-items: center; /*Align elements to the center*/
+        justify-content: flex-start;
+
+    cursor: pointer;
+}
+
+.mokepon-card img { /*Allows enter to the 'img' tag in the 'mokepon-card' class*/
+    width: 200px;
+}
+
+.title {
+    width: 1010px;
+    height: 100px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+
+    color: #21E1E1;
+    text-shadow: 0 0 50px black;
+    font-size: 72px;
+
+    display: flex;
+        justify-content: center;
+}
+
+.subtitle {
+    width: 500px;
+    margin-top: 45px;
+    margin-bottom: 40px;
+
+    color: #8FE3CF;
+    text-shadow: 0 0 15px black;
+    font-size: 27px;
+
+    display: flex;
+        justify-content: center;
+}
+
+.cards { 
+    margin-left: 50px;
+    margin-right: 50px;
+
+    display: flex;
+        gap: 55px; /*Allows separate the cards with 10px*/
+        flex-wrap: wrap;
+        justify-content: center;
+}
+
+#choose-pet { /*ID selector*/
+    color: #002B5B;
+    
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+#button-choose {
+    font-family: 'Press Start 2P', cursive;
+
+    width: 465px;
+    height: 65px;
+    border: 6px solid #002B5B;
+    border-radius: 20px;
+    margin-top: 40px;
+
+    color: #8FE3CF;
+    background: radial-gradient(black, transparent);
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+input {
+    display: none; /*Hides the inputs*/
+}
+
+input:checked + label {
+    background: radial-gradient(#9BA3EB, transparent);
+}
+
+#choose-attack {
+    flex-direction: column;
+        align-items: center;
+}
+
+.attack-buttons {
+    margin: 10px;
+
+    display: flex;
+        gap: 50px;
+}
+
+.fire-attack-button {
+    width: 200px;
+    height: 80px;
+    padding: 5px;
+    border: 5px solid darkred;
+    border-radius: 20px;
+    box-sizing: border-box;
+
+    background: radial-gradient(darkred, transparent);
+    text-shadow: 0 0 15px black;
+    font-size: 25px;
+
+    cursor: pointer;
+
+    font-family: 'Calistoga', cursive;
+}
+
+.water-attack-button {
+    width: 200px;
+    height: 80px;
+    padding: 5px;
+    border: 5px solid #002B5B;
+    border-radius: 20px;
+    box-sizing: border-box;
+
+    background: radial-gradient(#002B5B, transparent);
+    text-shadow: 0 0 15px black;
+    font-size: 25px;
+
+    cursor: pointer;
+
+    font-family: 'Calistoga', cursive;
+}
+
+.dirt-attack-button {
+    width: 200px;
+    height: 80px;
+    padding: 5px;
+    border: 5px solid #5BB318;
+    border-radius: 20px;
+    box-sizing: border-box;
+
+    background: radial-gradient(#5BB318, transparent);
+    text-shadow: 0 0 15px black;
+    font-size: 25px;
+
+    cursor: pointer;
+
+    font-family: 'Calistoga', cursive;
+}
+
+#messages {
+    width: 450px;
+    height: 100px;
+    padding: 10px;
+    margin: 25px;
+    border-radius: 25px;
+
+    color: #002B5B;
+    text-shadow: 0 0 10px #21E1E1;
+    font-size: 20px;
+
+    display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+}
+
+#button-reset {
+    width: 130px;
+    height: 50px;
+    padding: 5px;
+    margin-top: 10px;
+    border: 3px solid #002B5B;
+    border-radius: 25px;
+
+    background: radial-gradient(#002B5B, transparent);
+    text-shadow: 0 0 8px black;
+    color: #8FE3CF;
+    font-size: 22px;
+    
+    cursor: pointer;
+    
+    font-family: 'Calistoga', cursive;
+}
+
+.battle {
+    margin-top: 15px;
+    text-shadow: 0 0 8px #21E1E1;
+    color: #002B5B;
+
+    display: grid;
+        grid-template-columns: 200px 35px 200px;
+        text-align: center;
+        gap: 25px;
+}
+
+.win {
+    color: #7DCE13;
+}
+
+.lose {
+    color: #990000;
+}
+
+.draw {
+    color: #EC9B3B;
+}
+
+#player-victories, #enemy-victories {
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.player-register {
+    border:5px solid #002B5B;
+    border-radius: 15px;
+    background: radial-gradient(#8FE3CF, transparent);
+    
+}
+
+.enemy-register {
+    border:5px solid #002B5B;
+    border-radius: 15px;
+    background: radial-gradient(#8FE3CF, transparent);
+}
+
+.combat-register {
+    margin-top: 142px;
+    color: #8FE3CF;
+    text-shadow: 0 0 8px black;
+
+    font-size: 19.3px;
+
+}
+
+#player-image-pet, #enemy-image-pet {
+    width: 100px;
+    margin-top: -10px;
+}
+
+#number-attack {
+    margin-top: -3px;
+}
+
+@media (max-width: 360px) {
+    .cards, #attack-buttons {
+        flex-direction: column;
+    }
+}
