@@ -1,5 +1,0 @@
-- 👋 Hi, I’m @miguelkeydev
-- 👀 I’m learning Web Development
-- 🌱 This is probably one of my first small projects: MOKEPON
-- 💞️ To start, I'll create some projects about my likes, I'll do my best!
-- 📫 How to reach me [...](https://www.linkedin.com/in/miguel-suarez-95a759241/)
